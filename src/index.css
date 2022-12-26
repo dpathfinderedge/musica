@@ -5,22 +5,27 @@
 @layer components {
   .nav-icon {
     @apply block;
-  }
+  };
+
   .active .nav-icon {
     @apply hidden;
-  }
+  };
+
   .nav-icon-a {
     @apply hidden;
-  }
+  };
+
   .active .nav-icon-a {
     @apply block;
-  }
+  };
+
   .play-icon {
     @apply transition-all hover:cursor-pointer hover:scale-110
-  }
+  };
+
   .play-button {
     @apply rounded-full bg-white/[0.07] p-3 text-xs flex backdrop-blur-sm
-  }
+  };
 };
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -36,4 +41,24 @@
 /* Hide scroll bar in chrome  */
 *::-webkit-scrollbar {
   display: none;
+};
+
+.player{
+  overflow-x: visible !important;
+};
+
+.color-gradient{
+  background: linear-gradient(179.89deg, rgba(0, 0, 0, 0) 0.1%, rgba(15, 18, 19, 0.85) 80.67%);
 }
+
+.collection-container:hover img {
+  transform: scale(1.2);
+};
+
+.collection-container:hover .likes {
+  margin-bottom: 0;
+};
+
+.collection-container:hover .play-icon{
+  opacity: 1;
+};
