@@ -11,7 +11,7 @@ const Home = () => {
   });
 
   return (
-    <div className="w-full h-screen overflow-y-auto overflow-x-hidden md:mr-6 mr-2">
+    <div className="w-full h-screen overflow-y-auto overflow-x-hidden ">
       <section className="flex md:flex-row flex-col gap-6 w-full">
         <Hero />
         <TopCharts />
