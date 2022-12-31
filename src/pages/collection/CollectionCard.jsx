@@ -7,7 +7,7 @@ const CollectionCard = ({ title, artist, imgSrc, id }) => {
       to={`/playlist/${id}`}
       className="collection-container duration-1000 rounded-2xl h-[234px] w-full sm:w-[213px] text-white overflow-hidden flex items-end relative"
     >
-      <img className="sm:w-[213px] w-full h-[234px] transition-transform absolute top-0 left-0" src={imgSrc} alt="cover" />
+      <img className="w-full h-full transition-transform absolute top-0 left-0" src={imgSrc} alt="cover" />
       <div className="flex justify-between items-end color-gradient z-10 p-5 w-full h-full">
         <div className="w-3/4 font-semibold">
           <p className="text-2xl truncate">{title}</p>
