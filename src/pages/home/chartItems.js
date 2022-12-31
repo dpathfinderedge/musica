@@ -1,0 +1,5 @@
+export const chartItems = [
+  {id: 0, title: "Trending Are & Be", images: 'https://i0.wp.com/olumuse.org/wp-content/uploads/2020/09/unnamed.jpg?w=512&ssl=1', artist: 'DJ Esteem', desc: 'The pulse of R&B music today', timestamp: '53 : 00'},
+  {id: 1, title: "Hip Hop", images: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRy02fjwCtL4Uvwbh8Q6uo_QPMlkOazdvBXexTWta3YLXuGIdNK', artist: 'Wizkid', desc: 'Hip Hop music picked just for you', timestamp: '36 : 20'},
+  {id: 2, title: "Tomorrow's Tune", images: 'https://cdn.myportfolio.com/1fabf4ed77f805d754b14c5b7b6b7fb1/08196ebf3a4ad86ddbd1057860ae28c9caae76ca0f80fb65e035d8696cc58e354b3de0fde9bbfb6b_rw_1200.jpg?h=5e43ffa86778caa3e87507b8eb4338fd', artist: 'Adekunle Gold', desc: 'The hits of tomorrow are on Musica today', timestamp: '54 : 50'}
+];
