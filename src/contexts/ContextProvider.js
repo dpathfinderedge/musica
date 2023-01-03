@@ -39,10 +39,8 @@ export const ContextProvider = ({ children }) => {
   //   const baseURL = 'https://shazam-core.p.rapidapi.com/v1';
   //   const options = {
   //     params: { maxResults: 30 },
-  //     // old => e9d55569f7msha3a7e41de498a9ap1a348fjsn57f13e122fe8
-  //     // new => e53b083653mshdcc75cc09d21493p18e766jsncaf3a2b81b57
   //     headers: {
-  //       'X-RapidAPI-Key': 'e9d55569f7msha3a7e41de498a9ap1a348fjsn57f13e122fe8',
+  //       'X-RapidAPI-Key': REACT_APP_RAPID_API_KEY,
   //       'X-RapidAPI-Host': 'shazam-core.p.rapidapi.com'
   //     }
   //   };
