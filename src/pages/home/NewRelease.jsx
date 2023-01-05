@@ -9,7 +9,7 @@ const NewRelease = () => {
   return (
     <div className="w-full mt-10">
       <h2 className="text-2xl font-bold mb-3.5">New releases</h2>
-      <div className="flex flex-nowrap gap-7 overflow-x-scroll w-full">
+      <div className="flex flex-nowrap space-x-7 overflow-x-scroll w-full">
         {popular.map((track, index) => (
           (index < 10 ) && 
           <MusicList 
