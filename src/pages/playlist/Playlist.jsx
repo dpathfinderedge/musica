@@ -73,7 +73,7 @@ const Playlist = () => {
     <>
       <Animation>
         <section className="w-full h-screen overflow-auto">
-          <div className="flex md:flex-row flex-col md:justify-start justify-center md:items-end items-start gap-6 w-full">
+          <div className="flex md:flex-row flex-col md:justify-start justify-center md:items-end items-start md:space-x-6 space-x-0 md:space-y-0 space-y-6 w-full">
             <div className="sm:w-72 w-full h-full">
               <img className="object-cover rounded-[35px] w-full h-full" src={currentPlaylist?.images} alt="" />
             </div>
@@ -81,7 +81,7 @@ const Playlist = () => {
               <h4 className="text-4xl font-bold mb-2 text-[#A4C7C6]">{currentPlaylist?.title}</h4>
               <p className="text-sm text-[#EFEEE0] mb-2.5 max-w-[33rem]">{currentPlaylist?.desc}</p>
               <p className="text-sm text-[#EFEEE0]">10 songs - 1hr+</p>
-              <div className="flex gap-3 mt-6 w-full">
+              <div className="flex space-x-3 mt-6 w-full">
                 {[
                   [playIcon, 'Play all'],
                   [collectionIcon, playlistAddedToCollection ? 'Remove from collection' : 'Add to collection'],
