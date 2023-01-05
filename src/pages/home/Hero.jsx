@@ -21,7 +21,7 @@ const Hero = () => {
           <h2 className="text-4xl font-bold">R & B Hits</h2>
           <p className="w-full max-w-[17.25rem] text-sm">All mine, Lie again, Petty call me everyday, Out of time, No love, Bad habit, and so much more</p>
         </article>
-        <div className="flex gap-4 sm:justify-start justify-between items-center whitespace-nowrap w-full">
+        <div className="flex space-x-4 sm:justify-start justify-between items-center whitespace-nowrap w-full">
           <div>
             <Likes src="https://images.pexels.com/photos/6274836/pexels-photo-6274836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
             <Likes src="https://images.pexels.com/photos/4565030/pexels-photo-4565030.jpeg?auto=compress&cs=tinysrgb&w=600" ml="-ml-2" />
