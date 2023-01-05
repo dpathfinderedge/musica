@@ -7,14 +7,14 @@ const TopCharts = () => {
   return (
     <div className="md:w-1/3 w-full">
       <h2 className="text-2xl font-bold mb-3.5">Top Charts</h2>
-    <div className="flex md:flex-col flex-row md:gap-3 gap-4 overflow-x-scroll w-full">
+    <div className="flex md:flex-col flex-row md:space-y-3 space-y-0 md:space-x-0 space-x-4 overflow-x-scroll w-full">
         {chartItems.map((item) => (
           <Link 
             key={item.id}
             to={`/playlist/${item.id}`}
             className="shrink-0 md:w-full w-3/4"
           >
-            <div className="flex md:flex-row flex-col gap-3 bg-dark-alt p-4 rounded-3xl relative w-full">
+            <div className="flex md:flex-row flex-col md:space-x-3 space-x-0 md:space-y-0 space-y-3 bg-dark-alt p-4 rounded-3xl relative w-full">
               <div className="md:w-16 w-[108px] md:h-16 h-24">
                 <img className="object-cover rounded-xl w-full h-full" src={item.images} alt="music" />
               </div>
