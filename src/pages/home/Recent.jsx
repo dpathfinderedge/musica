@@ -9,7 +9,7 @@ const Recent = () => {
   return (
     <div className={`-mt-24 ${showPlayer ? 'mb-32' : 'mt-7 mb-10'}`}>
       <h2 className="text-2xl font-bold mb-3.5">Recently played</h2>
-      <div className="flex flex-nowrap gap-7 overflow-x-scroll w-full">
+      <div className="flex flex-nowrap space-x-7 overflow-x-scroll w-full">
         {sortedTracks.length && sortedTracks.map((track, index) => ( 
           (index < 5) &&
           <MusicList 
