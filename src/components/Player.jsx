@@ -61,8 +61,8 @@ const Player = () => {
   return (
     <div className={showPlayer ? 'block fixed bottom-0 left-0 right-0 w-full bg-[rgba(29,33,35,0.3)] border-t border-white/[0.1] backdrop-blur-lg md:py-6 py-4 md:pl-28 pl-6 md:pr-8 pr-8 z-50' : 'hidden' }>
       <audio id="audio-player" src={playerSrc} />
-      <div className="flex justify-between items-center gap-10 w-full">
-        <div className="flex items-center gap-3 md:w-1/5 w-3/5">
+      <div className="flex justify-between items-center space-x-10 w-full">
+        <div className="flex items-center space-x-3 md:w-1/5 w-3/5">
           <div className="md:w-12 w-14 md:h-12 h-14 shrink-0">
             <img src={playerDetail.cover} alt="" className="w-full h-full object-cover rounded-xl" />
           </div>
@@ -72,8 +72,8 @@ const Player = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:justify-center justify-end gap-8 grow-0 md:w-3/5">
-          <div className="flex justify-center items-center sm:gap-10 gap-4">
+        <div className="flex flex-col md:justify-center justify-end space-y-8 grow-0 md:w-3/5">
+          <div className="flex justify-center items-center sm:space-x-10 space-x-4"> 
             <svg onClick={handleShuffle} width="16" height="17" className="shuffle hidden md:inline-block h-4 play-icon hover:opacity-1" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.5 12.7593C14.5 12.746 14.4933 12.7327 14.4933 12.7193C14.4867 12.666 14.48 12.6127 14.46 12.566C14.4333 12.506 14.4 12.4593 14.36 12.4127C14.36 12.4127 14.36 12.406 14.3533 12.406C14.3067 12.3593 14.2533 12.326 14.1933 12.2993C14.1333 12.2727 14.0667 12.2593 14 12.2593L10.8867 12.2727C10.8867 12.2727 10.8867 12.2727 10.88 12.2727C10.48 12.2727 10.0933 12.086 9.85333 11.766L9.04 10.7193C8.87333 10.4993 8.56 10.4593 8.34 10.6327C8.12 10.806 8.08 11.1127 8.25333 11.3327L9.06666 12.3793C9.5 12.9393 10.18 13.2727 10.8867 13.2727H10.8933L12.7933 13.266L12.32 13.7393C12.1267 13.9327 12.1267 14.2527 12.32 14.446C12.42 14.546 12.5467 14.5927 12.6733 14.5927C12.8 14.5927 12.9267 14.546 13.0267 14.446L14.36 13.1127C14.4067 13.066 14.44 13.0127 14.4667 12.9527C14.4867 12.886 14.5 12.8193 14.5 12.7593Z" fill="white"/>
                 <path d="M5.61333 5.23266C5.18 4.63266 4.48667 4.27933 3.74667 4.27933C3.74 4.27933 3.74 4.27933 3.73333 4.27933L2 4.28599C1.72667 4.28599 1.5 4.51266 1.5 4.78599C1.5 5.05933 1.72667 5.28599 2 5.28599L3.74 5.27933H3.74667C4.16667 5.27933 4.56 5.47933 4.8 5.81933L5.52 6.81933C5.62 6.95266 5.77333 7.02599 5.92667 7.02599C6.02667 7.02599 6.13333 6.99266 6.22 6.93266C6.44667 6.76599 6.49333 6.45266 6.33333 6.23266L5.61333 5.23266Z" fill="white"/>
@@ -111,7 +111,7 @@ const Player = () => {
           </div>
         </div>
 
-        <div className="md:inline-flex hidden items-center gap-3 w-1/5">
+        <div className="md:inline-flex hidden items-center space-x-3 w-1/5">
           <button onClick={toggleVolume} className="outline-0 border-0"><img src={volumeIcon}  alt="volume" /></button>
           <div onClick={handleClick} className="volume-wrapper h-1 bg-white/[0.04] w-full rounded hover:cursor-pointer">
             <div className="bg-primary-yellow h-full rounded" style={{ width: volume * 100 + '%' }} />
