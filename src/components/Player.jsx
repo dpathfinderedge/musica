@@ -56,7 +56,7 @@ const Player = () => {
   // Player progress
   const handleChange = (e) => {
     audioPlayer.currentTime = e.target.value;
-  }
+  };
 
   return (
     <div className={showPlayer ? 'block fixed bottom-0 left-0 right-0 w-full bg-[rgba(29,33,35,0.3)] border-t border-white/[0.1] backdrop-blur-lg md:py-6 py-4 md:pl-28 pl-6 md:pr-8 pr-8 z-50' : 'hidden' }>
