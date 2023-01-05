@@ -16,7 +16,7 @@ function App() {
       <div className="h-screen overflow-y-auto overflow-x-hidden relative bg-main-bg px-6 bg-cover bg-no-repeat bg-center" style={styles}>
           <Player />
           <Header />
-          <main className="flex w-full h-full text-white mt-20"> {/** gap-6 */}
+          <main className="flex w-full h-full text-white mt-20"> {/** -6 */}
             <SideNav />
             <Routes>
               <Route exact path="/" element={<Home />} />
