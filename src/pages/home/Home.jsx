@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div className="w-full h-screen overflow-y-auto overflow-x-hidden ">
-      <section className="flex md:flex-row flex-col gap-6 w-full">
+      <section className="flex md:flex-row flex-col md:space-x-6 space-x-0 md:space-y-0 space-y-6 w-full">
         <Hero />
         <TopCharts />
       </section>
