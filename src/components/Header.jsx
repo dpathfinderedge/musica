@@ -55,8 +55,8 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 z-50 py-2 md:pl-14 px-6 w-full text-primary-gray bg-main-bg">
-      <div className={`${mobileSearchIsClicked ? 'md:inline-flex items-center h-11 w-full' : 'flex md:justify-start justify-between items-center gap-10 w-full'}`}>
-        <div className={mobileSearchIsClicked ? 'hidden' : 'flex items-center gap-4'}>
+      <div className={`${mobileSearchIsClicked ? 'md:inline-flex items-center h-11 w-full' : 'flex md:justify-start justify-between items-center space-x-10 w-full'}`}>
+        <div className={mobileSearchIsClicked ? 'hidden' : 'flex items-center space-x-4'}>
           <button className="md:hidden block outline-0 border-0" onClick={toggleSideMenu}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_2330_441)">
