@@ -53,7 +53,7 @@ const Player = () => {
     };
   };
 
-  // Sleek player
+  // Player progress
   const handleChange = (e) => {
     audioPlayer.currentTime = e.target.value;
   }
